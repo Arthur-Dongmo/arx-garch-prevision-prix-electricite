@@ -1,6 +1,6 @@
 # Prévision à court terme des prix de l'électricité — Modèles ARX-GARCH
 
-Modélisation et prévision des prix journaliers de l'électricité sur un marché dérégulé (Lituanie, Nord Pool), en intégrant la production éolienne comme variable exogène.
+Modélisation et prévision des prix journaliers de l'électricité sur un marché dérégulé, en intégrant la demande de l'électricité et la production éolienne comme variable exogène.
 
 > **Le modèle ARX(3)-APARCH(1,1) réduit l'erreur de prévision (MAPE) de 3,54 % à 3,21 % par rapport au modèle autorégressif de référence**, en captant à la fois l'effet de la production éolienne et l'asymétrie de la volatilité des prix.
 
