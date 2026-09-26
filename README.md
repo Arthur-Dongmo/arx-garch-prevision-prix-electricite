@@ -2,7 +2,7 @@
 
 Modélisation et prévision des prix journaliers de l'électricité sur un marché dérégulé, en intégrant la demande de l'électricité et la production éolienne comme variables exogènes.
 
-> **Le modèle ARX(3)-APARCH(0.943, 1,1) réduit l'erreur de prévision (MAPE) de 3,46 % à 3,21 % par rapport au modèle autorégressif de référence**, en captant à la fois l'effet de la production éolienne et l'asymétrie de la volatilité des prix.
+> **Le modèle ARX(3)-APARCH(0.943, 1,1) réduit l'erreur de prévision (MAPE) de 3,51 % à 3,21 % par rapport au modèle autorégressif de référence**, en captant à la fois l'effet de la production éolienne et l'asymétrie de la volatilité des prix.
 
 ## Sommaire
 
@@ -43,13 +43,14 @@ Ce projet répond à une question précise : **la prise en compte de la demande 
 1. **Analyse exploratoire** : stationnarité (tests ADF, Phillips-Perron), normalité et asymétrie de la distribution (Jarque-Bera, skewness/kurtosis).
 2. **Modèle moyen** : sélection d'un processus autorégressif AR(3) par les critères AIC/SIC/HQC, puis extension en ARX avec la demande et l'énergie éolienne comme régresseurs exogènes.
 3. **Diagnostic des résidus** : tests de Ljung-Box, test ARCH d'Engle et test de White, mettant en évidence une hétéroscédasticité conditionnelle à modéliser.
-4. **Modélisation de la variance** : estimation par maximum de vraisemblance (sous hypothèse d'une distribution de Student) de quatre spécifications GARCH captant différentes formes de volatilité — GARCH(2,1), EGARCH(1,1), GJR-GARCH(1,1) et APARCH(1,1) — chacune avec et sans variables exogènes (8 modèles au total).
+4. **Modélisation de la variance** : estimation par maximum de vraisemblance (sous hypothèse d'une distribution de Student) de quatre spécifications GARCH captant différentes formes de volatilité — GARCH(2,1), EGARCH(1,1), GJR-GARCH(1,1) et APARCH(0.943, 1,1) — chacune avec des variables exogènes (4 modèles au total).
 5. **Évaluation** : prévisions statiques hors échantillon, comparées sur 4 critères — RMSE, MAE, MAPE, coefficient d'inégalité de Theil (TIC).
 
 ## Résultats
 
 | Modèle | RMSE | MAE | MAPE (%) | TIC |
 |---|---|---|---|---|
+|AR	|0.1494	|0.1268	|3.541|0.02025
 | ARX | 0.1428 | 0.1250 | 3.467 | 0.01938 |
 | ARX-GARCH | 0.1396 | 0.1196 | 3.303 | 0.01897 |
 | ARX-EGARCH | 0.1391 | 0.1175 | 3.240 | 0.01891 |
