@@ -2,7 +2,7 @@
 
 Modélisation et prévision des prix journaliers de l'électricité sur un marché dérégulé, en intégrant la demande de l'électricité et la production éolienne comme variable exogène.
 
-> **Le modèle ARX(3)-APARCH(0.943, 1,1) réduit l'erreur de prévision (MAPE) de 3,54 % à 3,21 % par rapport au modèle autorégressif de référence**, en captant à la fois l'effet de la production éolienne et l'asymétrie de la volatilité des prix.
+> **Le modèle ARX(3)-APARCH(0.943, 1,1) réduit l'erreur de prévision (MAPE) de 3,46 % à 3,21 % par rapport au modèle autorégressif de référence**, en captant à la fois l'effet de la production éolienne et l'asymétrie de la volatilité des prix.
 
 Ce dépôt s'appuie sur mon mémoire de Master en Modélisation Mathématique en Économie et Finance (École Nationale Supérieure Polytechnique de Yaoundé — CETIC).
 
@@ -52,15 +52,10 @@ Ce projet répond à une question précise : **la prise en compte de la demande 
 
 | Modèle | RMSE | MAE | MAPE (%) | TIC |
 |---|---|---|---|---|
-| AR | 0.1494 | 0.1268 | 3.541 | 0.02025 |
 | ARX | 0.1428 | 0.1250 | 3.467 | 0.01938 |
-| AR-GARCH | 0.1420 | 0.1193 | 3.311 | 0.01928 |
 | ARX-GARCH | 0.1396 | 0.1196 | 3.303 | 0.01897 |
-| AR-EGARCH | 0.1408 | 0.1178 | 3.266 | 0.01912 |
 | ARX-EGARCH | 0.1391 | 0.1175 | 3.240 | 0.01891 |
-| AR-GJR-GARCH | 0.1713 | 0.1459 | 4.095 | 0.02311 |
 | ARX-GJR-GARCH | 0.1392 | 0.1176 | 3.242 | 0.01892 |
-| AR-APARCH | 0.1407 | 0.1178 | 3.264 | 0.01912 |
 | **ARX-APARCH** | **0.1384** | **0.1164** | **3.209** | **0.01882** |
 
 **Enseignements principaux :**
