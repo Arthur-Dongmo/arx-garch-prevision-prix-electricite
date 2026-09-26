@@ -11,7 +11,8 @@ Modélisation et prévision des prix journaliers de l'électricité sur un march
 - [Données](#user-content-données)
 - [Méthodologie](#user-content-méthodologie)
 - [Résultats](#user-content-résultats)
-- [Limites et perspectives](#user-content-limites-et-perspectives)
+- [Ce que révèlent les données](#user-content-ce-que-révèlent-les-données)
+- [Pistes d'amélioration](#user-content-pistes-d-amélioration)
 
 ## Objectif
 
@@ -63,7 +64,7 @@ Ce projet répond à une question précise : **la prise en compte de la demande 
 - La demande d'électricité n'apporte pas de gain prédictif significatif sur la période étudiée.
 - La volatilité des prix est non linéaire, asymétrique et présente un effet de levier : les chocs négatifs impactent davantage la volatilité que les chocs positifs de même ampleur (EGARCH, GJR-GARCH, APARCH).
 
-## Limites et perspectives
+## Pistes d'amélioration
 
 - La base de données ne couvre que la demande et la production éolienne parmi les variables exogènes envisagées ; le prix des combustibles fossiles (charbon, gaz naturel, CO2) et le solaire photovoltaïque n'ont pas pu être intégrés faute de disponibilité des données, ce qui limite l'évaluation complète de leur effet sur le prix.
 - Contrairement à d'autres marchés (actions, matières premières), l'effet de levier inverse classique n'est pas confirmé ici : les chocs négatifs augmentent davantage la volatilité que les chocs positifs, un résultat cohérent avec une partie de la littérature mais qui mériterait d'être testé sur une période plus longue.
