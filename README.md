@@ -57,11 +57,11 @@ Ce projet répond à une question précise : **la prise en compte de la demande 
 | ARX-GJR-GARCH | 0.1392 | 0.1176 | 3.242 | 0.01892 |
 | **ARX-APARCH** | **0.1384** | **0.1164** | **3.209** | **0.01882** |
 
-**Enseignements principaux :**
-- L'intégration de l'énergie éolienne améliore systématiquement la performance prédictive et impacte négativement le prix (effet significatif à 1 %) — une production éolienne plus élevée est associée à des prix plus bas.
+## Ce que révèlent les données
+
+- L'intégration de l'énergie éolienne améliore systématiquement la performance prédictive et impacte négativement le prix (effet significatif à 1 %). Donc une production éolienne plus élevée est associée à des prix plus bas.
 - La demande d'électricité n'apporte pas de gain prédictif significatif sur la période étudiée.
 - La volatilité des prix est non linéaire, asymétrique et présente un effet de levier : les chocs négatifs impactent davantage la volatilité que les chocs positifs de même ampleur (EGARCH, GJR-GARCH, APARCH).
-- Le modèle ARX-APARCH domine sur les 4 critères de performance (RMSE, MAE, MAPE, TIC) parmi les 10 spécifications comparées.
 
 ## Limites et perspectives
 
