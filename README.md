@@ -23,7 +23,7 @@ Ce projet répond à une question précise : **la prise en compte de la demande 
 
 - **Langage** : R (`rugarch`, `forecast`, `tseries`, `FinTS`, `skedastic`, `vars`, `urca`, `ggplot2`), EViews 9
 - **Économétrie des séries temporelles** : tests de racine unitaire, modèles ARX, famille GARCH (GARCH, EGARCH, GJR-GARCH, APARCH), estimation par maximum de vraisemblance
-- **Diagnostic statistique** : tests de Ljung-Box, ARCH-LM (Engle), White, Jarque-Bera
+- **Diagnostic statistique** : tests de Ljung-Box, ARCH-LM (Engle), White
 - **Évaluation de modèles prédictifs** : validation train/test, comparaison multi-critères (RMSE, MAE, MAPE, TIC)
 - **Data visualisation** : ggplot2, analyse exploratoire de séries chronologiques
 
