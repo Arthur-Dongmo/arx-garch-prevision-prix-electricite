@@ -4,8 +4,6 @@ Modélisation et prévision des prix journaliers de l'électricité sur un march
 
 > **Le modèle ARX(3)-APARCH(0.943, 1,1) réduit l'erreur de prévision (MAPE) de 3,46 % à 3,21 % par rapport au modèle autorégressif de référence**, en captant à la fois l'effet de la production éolienne et l'asymétrie de la volatilité des prix.
 
-Ce dépôt s'appuie sur mon mémoire de Master en Modélisation Mathématique en Économie et Finance (École Nationale Supérieure Polytechnique de Yaoundé — CETIC).
-
 ## Sommaire
 
 - [Objectif / Problématique](#user-content-objectif--problématique)
