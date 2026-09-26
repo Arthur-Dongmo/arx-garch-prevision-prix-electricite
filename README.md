@@ -13,7 +13,7 @@ Modélisation et prévision des prix journaliers de l'électricité sur un march
 - [Résultats](#user-content-résultats)
 - [Limites et perspectives](#user-content-limites-et-perspectives)
 
-## Objectif / Problématique
+## Objectif
 
 Depuis la dérégulation des marchés de l'électricité, les prix sont fixés par des mécanismes de marché concurrentiels et affichent une forte volatilité, non linéaire et asymétrique dans le temps. Pour les producteurs et fournisseurs, anticiper ces prix avec précision est central pour les stratégies d'enchères, la couverture de risque et les décisions d'investissement.
 
