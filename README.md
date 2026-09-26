@@ -12,7 +12,7 @@ Modélisation et prévision des prix journaliers de l'électricité sur un march
 - [Méthodologie](#user-content-méthodologie)
 - [Résultats](#user-content-résultats)
 - [Ce que révèlent les données](#user-content-ce-que-révèlent-les-données)
-- [Pistes d'amélioration](#user-content-pistes-d-'-amélioration)
+- [Pistes d'amélioration](#user-content-pistes-d'-amélioration)
 
 ## Objectif
 
